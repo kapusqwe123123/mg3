@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кофе с любовью</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f5f0; }
+    h1, h2 { color: #4a3225; }
+    .product { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; background: white; border-radius: 6px; }
+
+    /* Блок-подсказка вместо картинки */
+    .image-placeholder {
+      background: #e8d9d0;
+      color: #5a4538;
+      text-align: center;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      border: 2px dashed #a88b77;
+    }
+
+    /* Иконка внутри блока (символ чашки) */
+    .icon { font-size: 40px; display: block; margin-bottom: 10px; }
+
+    button { background: #5c3a21; color: white; padding: 8px 16px; border: none; cursor: pointer; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <h1>☕ Кофе с любовью</h1>
+  <p>Свежеобжаренные зёрна и уютные вкусы для твоего дня.</p>
+
+  <h2>Каталог</h2>
+
+  <!-- Товар 1 -->
+  <div class="product">
+    <div class="image-placeholder">
+      <span class="icon">☕</span>
+      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
+      замените этот блок на:
+      <code>&lt;img src="coffee-1.jpg" ...&gt;</code>
+    </div>
+    <h3>Арабика Эфиопия</h3>
+    <p>Яркий вкус с нотами ягод и цитруса.</p>
+    <p><strong>500 г — 1 200 ₽</strong></p>
+    <button onclick="alert('Арабика добавлена в корзину!')">В корзину</button>
+  </div>
+
+  <!-- Товар 2 -->
+  <div class="product">
+    <div class="image-placeholder">
+      <span class="icon">☕</span>
+      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
+      замените этот блок на:
+      <code>&lt;img src="coffee-2.jpg" ...&gt;</code>
+    </div>
+    <h3>Робуста Вьетнам</h3>
+    <p>Плотный, насыщенный вкус с шоколадным оттенком.</p>
+    <p><strong>500 г — 950 ₽</strong></p>
+    <button onclick="alert('Робуста добавлена в корзину!')">В корзину</button>
+  </div>
+
+  <!-- Товар 3 -->
+  <div class="product">
+    <div class="image-placeholder">
+      <span class="icon">☕</span>
+      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
+      замените этот блок на:
+      <code>&lt;img src="coffee-3.jpg" ...&gt;</code>
+    </div>
+    <h3>Бленд Классика</h3>
+    <p>Сбалансированный вкус для эспрессо и фильтр-кофе.</p>
+    <p><strong>500 г — 1 100 ₽</strong></p>
+    <button onclick="alert('Бленд добавлен в корзину!')">В корзину</button>
+  </div>
+
+  <h2>Контакты</h2>
+  <p>📍 Москва, ул. Кофейная, 1</p>
+  <p>📞 +7 (999) 000-00-00</p>
+
+</body>
+</html>
