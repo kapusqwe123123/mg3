@@ -5,79 +5,82 @@
   <title>Кофе с любовью</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f5f0; }
-    h1, h2 { color: #4a3225; }
-    .product { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; background: white; border-radius: 6px; }
+    h1, h2 { color: #4a3225; text-align: center; }
+    .product { border: 1px solid #ddd; padding: 15px; margin-bottom: 25px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 
-    /* Блок-подсказка вместо картинки */
-    .image-placeholder {
+    /* Стили для реальной картинки */
+    .real-img { width: 100%; height: 220px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; display: block; }
+
+    /* Блок-подсказка (серый, с пунктиром) */
+    .placeholder {
       background: #e8d9d0;
       color: #5a4538;
       text-align: center;
       padding: 30px;
-      border-radius: 5px;
-      margin-bottom: 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
       font-weight: bold;
       border: 2px dashed #a88b77;
     }
+    .icon { font-size: 40px; display: block; margin-bottom: 8px; }
 
-    /* Иконка внутри блока (символ чашки) */
-    .icon { font-size: 40px; display: block; margin-bottom: 10px; }
-
-    button { background: #5c3a21; color: white; padding: 8px 16px; border: none; cursor: pointer; border-radius: 4px; }
+    button { background: #5c3a21; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; font-size: 1rem; width: 100%; }
+    button:hover { background: #4b2e1d; }
   </style>
 </head>
 <body>
 
   <h1>☕ Кофе с любовью</h1>
-  <p>Свежеобжаренные зёрна и уютные вкусы для твоего дня.</p>
+  <p style="text-align:center;">Свежеобжаренные зёрна и уютные вкусы для твоего дня.</p>
 
   <h2>Каталог</h2>
 
-  <!-- Товар 1 -->
+  <!-- Товар 1: Тут уже стоит реальная картинка из интернета -->
   <div class="product">
-    <div class="image-placeholder">
-      <span class="icon">☕</span>
-      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
-      замените этот блок на:
-      <code>&lt;img src="coffee-1.jpg" ...&gt;</code>
+    <img src="https://images.unsplash.com/photo-1558981420-bf35fd2dfab9?q=80&w=800&auto=format&fit=crop" alt="Арабика Эфиопия" class="real-img">
+    <!-- А вот эта плашка — подсказка, если захочешь заменить фото -->
+    <div class="placeholder">
+      <span class="icon">🖼️</span>
+      ПОДСКАЗКА: Чтобы поставить своё фото, просто удали строчку с <b>&lt;img src="..."&gt;</b> выше и загрузи свой файл.
     </div>
     <h3>Арабика Эфиопия</h3>
-    <p>Яркий вкус с нотами ягод и цитруса.</p>
-    <p><strong>500 г — 1 200 ₽</strong></p>
+    <p>Яркий вкус с нотами ягод и цитруса. 100% арабика, средняя обжарка.</p>
+    <p style="font-size:1.1rem; font-weight:bold; text-align:center;">500 г — 1 200 ₽</p>
     <button onclick="alert('Арабика добавлена в корзину!')">В корзину</button>
   </div>
 
-  <!-- Товар 2 -->
+  <!-- Товар 2: Тут тоже реальная картинка -->
   <div class="product">
-    <div class="image-placeholder">
-      <span class="icon">☕</span>
-      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
-      замените этот блок на:
-      <code>&lt;img src="coffee-2.jpg" ...&gt;</code>
+    <img src="https://images.unsplash.com/photo-1517705008128-361805f42089?q=80&w=800&auto=format&fit=crop" alt="Робуста Вьетнам" class="real-img">
+    <div class="placeholder">
+      <span class="icon">🖼️</span>
+      ПОДСКАЗКА: Сюда можно вставить своё фото товара.
     </div>
     <h3>Робуста Вьетнам</h3>
-    <p>Плотный, насыщенный вкус с шоколадным оттенком.</p>
-    <p><strong>500 г — 950 ₽</strong></p>
+    <p>Плотный, насыщенный вкус с шоколадным оттенком и легкой горчинкой.</p>
+    <p style="font-size:1.1rem; font-weight:bold; text-align:center;">500 г — 950 ₽</p>
     <button onclick="alert('Робуста добавлена в корзину!')">В корзину</button>
   </div>
 
-  <!-- Товар 3 -->
+  <!-- Товар 3: И тут картинка -->
   <div class="product">
-    <div class="image-placeholder">
-      <span class="icon">☕</span>
-      ПОДСКАЗКА: ВСТАВЬТЕ СЮДА ССЫЛКУ НА ФОТО:<br>
-      замените этот блок на:
-      <code>&lt;img src="coffee-3.jpg" ...&gt;</code>
+    <img src="https://images.unsplash.com/photo-1623654629735-b0cb8c5a2a9a?q=80&w=800&auto=format&fit=crop" alt="Бленд Классика" class="real-img">
+    <div class="placeholder">
+      <span class="icon">🖼️</span>
+      ПОДСКАЗКА: Замени ссылку в теге img на путь к своему файлу.
     </div>
     <h3>Бленд Классика</h3>
-    <p>Сбалансированный вкус для эспрессо и фильтр-кофе.</p>
-    <p><strong>500 г — 1 100 ₽</strong></p>
+    <p>Сбалансированный вкус для эспрессо и фильтр-кофе. Идеален для утренней чашки.</p>
+    <p style="font-size:1.1rem; font-weight:bold; text-align:center;">500 г — 1 100 ₽</p>
     <button onclick="alert('Бленд добавлен в корзину!')">В корзину</button>
   </div>
 
-  <h2>Контакты</h2>
-  <p>📍 Москва, ул. Кофейная, 1</p>
-  <p>📞 +7 (999) 000-00-00</p>
+  <h2 style="text-align:center;">Контакты</h2>
+  <div style="background:white; padding:20px; border-radius:8px; text-align:center; border:1px solid #eee;">
+    <p>📍 Москва, ул. Кофейная, 1</p>
+    <p>📞 +7 (999) 000-00-00</p>
+    <p>✉️ hello@coffeeandjoy.ru</p>
+  </div>
 
 </body>
 </html>
