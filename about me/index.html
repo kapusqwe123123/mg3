@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers Vibe — Вкус, который чувствуешь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== НАВИГАЦИЯ ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Burgers<span>Vibe</span></a>
+            <ul class="nav-links">
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Burgers <span>Vibe</span></h1>
+            <p>Вкус, который чувствуешь. Атмосфера, которую помнишь.</p>
+            <a href="#menu" class="btn">Смотреть меню</a>
+        </div>
+        <div class="scroll-down">↓</div>
+    </header>
+
+    <!-- ===== МЕНЮ ===== -->
+    <section class="menu-section" id="menu">
+        <h2 class="section-title">Наши <span>Хиты</span></h2>
+        <p class="section-subtitle">Каждый бургер готовится с любовью и свежими ингредиентами</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="beef">Говядина</button>
+            <button class="filter-btn" data-filter="chicken">Курица</button>
+            <button class="filter-btn" data-filter="veggie">Вегетарианские</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <!-- Карточки добавляются через JS -->
+        </div>
+    </section>
+
+    <!-- ===== О НАС ===== -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>О <span>нас</span></h2>
+                <p>Мы — маленькая бургерная с большой любовью к своему делу. Готовим из свежего мяса, печём булочки сами и никогда не используем заморозку.</p>
+                <p>Наша цель — не просто накормить, а подарить тот самый <strong>vibe</strong>, ради которого хочется вернуться.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>лет опыта</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20K</h3>
+                        <p>довольных гостей</p>
+                    </div>
+                    <div class="stat">
+                        <h3>12</h3>
+                        <p>видов бургеров</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="О нас">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <footer class="footer" id="contacts">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Burgers<span>Vibe</span></h3>
+                <p>Вкус, который чувствуешь.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>г. Москва, ул. Вкусная, д. 15</p>
+                <p>+7 (999) 123-45-67</p>
+                <p>hello@burgersvibe.ru</p>
+            </div>
+            <div class="footer-col">
+                <h4>Часы работы</h4>
+                <p>Пн–Чт: 11:00 – 23:00</p>
+                <p>Пт–Вс: 11:00 – 01:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <div class="socials">
+                    <a href="#">Instagram</a>
+                    <a href="#">Telegram</a>
+                    <a href="#">VK</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Burgers Vibe. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- ===== МОДАЛЬНОЕ ОКНО ЗАКАЗА ===== -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Оформление заказа</h2>
+            <p id="modalBurgerName"></p>
+            <p id="modalBurgerPrice"></p>
+            <input type="text" placeholder="Ваше имя" id="orderName">
+            <input type="tel" placeholder="Телефон" id="orderPhone">
+            <button class="btn" id="confirmOrder">Подтвердить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
